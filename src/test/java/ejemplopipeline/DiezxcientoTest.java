@@ -22,7 +22,7 @@ public class DiezxcientoTest {
 	@Test
 	public void testSaldoAhorro() throws Exception {
 		Diezxciento diezxciento = new Diezxciento(24000000,900000);
-		assertEquals(20700000, diezxciento.saldoAhorro());
+		assertEquals(21600000, diezxciento.saldoAhorro());
 	}
 
 }
