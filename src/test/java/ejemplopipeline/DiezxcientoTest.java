@@ -1,6 +1,7 @@
 package ejemplopipeline;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
@@ -14,12 +15,14 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testImpuesto() throws Exception {
-
+		Diezxciento diezxciento = new Diezxciento(24000000,900000);
+		assertSame(0, diezxciento.impuesto());
 	}
 
 	@Test
 	public void testSaldoAhorro() throws Exception {
-
+		Diezxciento diezxciento = new Diezxciento(24000000,900000);
+		assertEquals(20700000, diezxciento.saldoAhorro());
 	}
 
 }
